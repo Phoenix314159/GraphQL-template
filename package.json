@@ -1,0 +1,30 @@
+{
+  "name": "graphQL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js --exec babel-node"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src/*.js",
+      "src/resolvers/*.js",
+      "src/schema.graphql"
+    ]
+  },
+  "ext": "js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "graphql-yoga": "^1.17.4",
+    "uuid": "^3.3.2"
+  }
+}
